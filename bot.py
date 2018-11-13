@@ -8,7 +8,7 @@ class Bot(BaseMessenger):
 
     def message(self, message):
         self.send(
-            {'text': 'Received: {}'.format(message['message']['text'])},
+            {'text': 'Your facebook id is {}'.format(message['sender']['id'])},
             'RESPONSE'
         )
 
